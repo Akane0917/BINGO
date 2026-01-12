@@ -66,6 +66,7 @@ namespace BINGO
                     if (a.Text == numberLabel.Text)
                     {
                         a.Visible = false;
+                        
                     }
                 }
             }
@@ -96,6 +97,8 @@ namespace BINGO
         {
             Form1 form1 = new Form1();
             form1.Show();
+
+            this.Hide();
         }
     }
 }
