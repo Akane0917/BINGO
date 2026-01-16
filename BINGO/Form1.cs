@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace BINGO
 {
-    public partial class Form1 : Form
+    public partial class homeForm : Form
     {
-        public Form1()
+        public homeForm()
         {
             InitializeComponent();
         }
@@ -21,7 +21,7 @@ namespace BINGO
         {
 
             //start the game and close this form
-            Form2 form2 = new Form2();
+            playForm form2 = new playForm();
             form2.Show();
             
             this.Hide();

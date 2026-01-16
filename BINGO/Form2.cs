@@ -11,21 +11,22 @@ using System.Windows.Forms;
 
 namespace BINGO
 {
-    public partial class Form2 : Form
+    public partial class playForm : Form
     {
-
-        public Form2()
+    
+        public playForm()
         {
-
             InitializeComponent();
             
 
         }
-
+       
         //creat Random variable
         Random random = new Random();
         private void Form2_Load(object sender, EventArgs e)
         {
+
+           
             //set the number from 1 to 30
           List<int> numbers = Enumerable.Range(1, 29).ToList();
 
@@ -56,22 +57,26 @@ namespace BINGO
 
         //check the number
         //if the number of labels is the same  as the number of drawn, remove the labels
-        void CheckNumber()
+        async Task CheckNumber()
         {
             try
             {
                 for (int i = 1; i <= 18; i++)
                 {
                     Label a = this.Controls["label" + i] as Label;
-                    if (a.Text == numberLabel.Text)
+                    if (a !=null && a.Text == numberLabel.Text)
                     {
+                        await Task .Delay(1000);
                         a.Visible = false;
-                        
                     }
                 }
             }
             catch { }
         }
+
+      
+
+        
 
         //check the answer
         //if the answer is correct, win the game
@@ -95,7 +100,7 @@ namespace BINGO
 
         private void homeButton_Click(object sender, EventArgs e)
         {
-            Form1 form1 = new Form1();
+            homeForm form1 = new homeForm();
             form1.Show();
 
             this.Hide();

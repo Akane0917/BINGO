@@ -1,6 +1,6 @@
 ﻿namespace BINGO
 {
-    partial class Form1
+    partial class homeForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(homeForm));
             this.label20 = new System.Windows.Forms.Label();
             this.exitButton = new System.Windows.Forms.Button();
             this.startButton = new System.Windows.Forms.Button();
@@ -38,8 +38,8 @@
             // 
             this.label20.BackColor = System.Drawing.Color.Transparent;
             this.label20.Font = new System.Drawing.Font("Snap ITC", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.ForeColor = System.Drawing.Color.Maroon;
-            this.label20.Location = new System.Drawing.Point(157, 109);
+            this.label20.ForeColor = System.Drawing.Color.Red;
+            this.label20.Location = new System.Drawing.Point(177, 115);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(351, 45);
             this.label20.TabIndex = 21;
@@ -69,7 +69,7 @@
             this.startButton.UseVisualStyleBackColor = false;
             this.startButton.Click += new System.EventHandler(this.startButton_Click);
             // 
-            // Form1
+            // homeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -79,7 +79,7 @@
             this.Controls.Add(this.startButton);
             this.Controls.Add(this.exitButton);
             this.Controls.Add(this.label20);
-            this.Name = "Form1";
+            this.Name = "homeForm";
             this.Text = "homeForm";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
